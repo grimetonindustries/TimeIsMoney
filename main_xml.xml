@@ -10,20 +10,22 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#691a99"
             android:orientation="horizontal"
+            android:background="#691a99"
             >
 
             <TextView
                 android:id="@+id/intressen"
                 android:text="Total time saved:"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="25dp"
                 android:paddingBottom="60dp"
-                android:layout_marginTop="30dp"
-                android:paddingLeft="45dp"
-                android:textColor="#ffffff"/>
+                android:paddingTop="6dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                />
 
 
 
@@ -44,59 +46,86 @@
 
                 <TextView
 
-                    android:text="Styrketräning"
-                    android:id="@+id/styrketraning"
+                    android:text="Get a coffee machine with timer."
+                    android:id="@+id/coffee_machine"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="50dp"
-                    android:paddingTop="50dp"
-                    android:textColor="#68efad"
+                    android:paddingTop="6dp"
                     android:background="#F5F5F5"
 
                     />
 
                 <TextView
 
-                    android:text="Teknik"
-                    android:id="@+id/teknik"
+                    android:text="Do your training at home."
+                    android:id="@+id/training"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="50dp"
-                    android:textColor="#68efad"
+                    android:paddingTop="6dp"
+
                     />
 
 
                 <TextView
 
-                    android:text="Datorer"
-                    android:id="@+id/datorer"
+                    android:text="Buy a cheap preheating systerm for your car"
+                    android:id="@+id/preheat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="50dp"
-                    android:textColor="#68efad"
+                    android:paddingTop="6dp"
                     android:background="#F5F5F5"
                     />
 
 
                 <TextView
 
-                    android:text="Familjen"
-                    android:id="@+id/familjen"
+                    android:text="Eat leftovers from yesterdays dinner"
+                    android:id="@+id/leftovers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="50dp"
+                    android:paddingTop="6dp"
                     />
 
 
                 <TextView
 
-                    android:text="Drönare"
-                    android:id="@+id/dronare"
+                    android:text="Brush your teeth in the shower"
+                    android:id="@+id/brush_teeth"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="50dp"
                     android:background="#F5F5F5"
+                    android:paddingTop="6dp"
                     />
+
+
+                <TextView
+
+                    android:text="make phonecalls in your car"
+                    android:id="@+id/car_phonecalls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="50dp"
+                    android:paddingTop="6dp"
+
+                    />
+
+
+                <TextView
+
+                    android:text="Get a robot vacuum cleaner"
+                    android:id="@+id/vacuum_cleaner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="50dp"
+                    android:background="#F5F5F5"
+                    android:paddingTop="6dp"
+                    />
+
 
             </LinearLayout>
         </ScrollView>
@@ -104,4 +133,5 @@
 
 
     </LinearLayout>
+
 
