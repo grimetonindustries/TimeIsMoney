@@ -1,137 +1,284 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.timeismoneygithub.MainActivity"
+    >
+
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        xmlns:tools="http://schemas.android.com/tools"
-        tools:context="com.example.android.timeismoneygithub.MainActivity">
+        android:layout_height="wrap_content"
+        android:background="#691a99"
+        android:orientation="horizontal">
 
-
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/intressen"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#691a99"
-            >
-
-            <TextView
-                android:id="@+id/intressen"
-                android:text="Total time saved:"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:paddingBottom="60dp"
-                android:paddingTop="6dp"
-                android:layout_marginTop="0dp"
-                android:textColor="#ffffff"
-                android:layout_centerHorizontal="true"
-                />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="60dp"
+            android:paddingTop="6dp"
+            android:text="Total time saved:"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
 
 
+    </RelativeLayout>
 
 
-        </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            >
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:orientation="horizontal">
 
 
                 <TextView
 
-                    android:text="Get a coffee machine with timer."
                     android:id="@+id/coffee_machine"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F5F5F5"
                     android:paddingBottom="50dp"
                     android:paddingTop="6dp"
-                    android:background="#F5F5F5"
+                    android:text="Get a coffee machine with timer."
 
                     />
 
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#F5F5F5"
+                    android:paddingRight="15dp"
+                    android:text="2 min"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
                 <TextView
 
-                    android:text="Do your training at home."
                     android:id="@+id/training"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:paddingBottom="50dp"
                     android:paddingTop="6dp"
+                    android:text="Do your training at home."
 
                     />
 
-
-                <TextView
-
-                    android:text="Buy a cheap preheating systerm for your car"
-                    android:id="@+id/preheat"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="50dp"
-                    android:paddingTop="6dp"
-                    android:background="#F5F5F5"
-                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:text="8 min"
 
 
-                <TextView
-
-                    android:text="Eat leftovers from yesterdays dinner"
-                    android:id="@+id/leftovers"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="50dp"
-                    android:paddingTop="6dp"
-                    />
-
-
-                <TextView
-
-                    android:text="Brush your teeth in the shower"
-                    android:id="@+id/brush_teeth"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="50dp"
-                    android:background="#F5F5F5"
-                    android:paddingTop="6dp"
-                    />
-
-
-                <TextView
-
-                    android:text="make phonecalls in your car"
-                    android:id="@+id/car_phonecalls"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="50dp"
-                    android:paddingTop="6dp"
-
-                    />
-
-
-                <TextView
-
-                    android:text="Get a robot vacuum cleaner"
-                    android:id="@+id/vacuum_cleaner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="50dp"
-                    android:background="#F5F5F5"
-                    android:paddingTop="6dp"
                     />
 
 
             </LinearLayout>
-        </ScrollView>
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:orientation="horizontal">
 
-    </LinearLayout>
+
+                <TextView
+
+                    android:id="@+id/preheat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F5F5F5"
+                    android:paddingBottom="50dp"
+                    android:paddingTop="6dp"
+                    android:text="Buy a cheap preheating systerm for your car" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#F5F5F5"
+                    android:paddingRight="15dp"
+                    android:text="3 min"
+
+                    />
+
+            </LinearLayout>
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/leftovers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="50dp"
+                    android:paddingTop="6dp"
+                    android:text="Eat leftovers from yesterdays dinner" />
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:text="5 min" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:id="@+id/brush_teeth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F5F5F5"
+                    android:paddingBottom="50dp"
+                    android:paddingTop="6dp"
+                    android:text="Brush your teeth in the shower" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#F5F5F5"
+                    android:paddingRight="15dp"
+                    android:text="2 min"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:id="@+id/car_phonecalls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="50dp"
+                    android:paddingTop="6dp"
+                    android:text="make phonecalls in your car"
+
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:text="4 min" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:id="@+id/vacuum_cleaner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F5F5F5"
+                    android:paddingBottom="50dp"
+                    android:paddingTop="6dp"
+                    android:text="Buy a robot vacuum cleaner" />
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#F5F5F5"
+                    android:paddingRight="8dp"
+                    android:text="12 min"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:id="@+id/lawn_mower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="50dp"
+                    android:paddingTop="6dp"
+                    android:text="Buy a robot lawn mower"
+
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:text="8 min" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
