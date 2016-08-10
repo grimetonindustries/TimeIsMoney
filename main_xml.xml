@@ -4,28 +4,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.timeismoneygithub.MainActivity"
-    >
-
+    tools:context="com.example.android.timeismoneygithub.MainActivity">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#691a99"
-        android:orientation="horizontal">
+        android:background="#691a99">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:onClick="openbrowser"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/grimetonsistavit"
+            android:tag="https://github.com/grimetonindustries" />
+
 
         <TextView
-            android:id="@+id/intressen"
+            android:id="@+id/total_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="0dp"
-            android:paddingBottom="60dp"
-            android:paddingTop="6dp"
-            android:text="Total time saved:"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="15dp"
+            android:text="Total daily time saved :"
             android:textColor="#ffffff"
-            android:textSize="25dp" />
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/total_minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/total_time"
+            android:layout_toRightOf="@id/total_time"
+            android:paddingLeft="8dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/total_time"
+            android:layout_toRightOf="@id/total_minutes"
+            android:paddingLeft="10dp"
+            android:text="minutes"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
 
 
     </RelativeLayout>
@@ -55,8 +84,10 @@
                     android:layout_weight="1"
                     android:background="#F5F5F5"
                     android:paddingBottom="50dp"
+                    android:paddingLeft="8dp"
                     android:paddingTop="6dp"
                     android:text="Get a coffee machine with timer."
+
 
                     />
 
@@ -66,6 +97,8 @@
                     android:background="#F5F5F5"
                     android:paddingRight="15dp"
                     android:text="2 min"
+
+                    android:id="@+id/coffeecheckbox"
 
                     />
 
@@ -85,6 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingBottom="50dp"
+                    android:paddingLeft="8dp"
                     android:paddingTop="6dp"
                     android:text="Do your training at home."
 
@@ -118,8 +152,9 @@
                     android:layout_weight="1"
                     android:background="#F5F5F5"
                     android:paddingBottom="50dp"
+                    android:paddingLeft="8dp"
                     android:paddingTop="6dp"
-                    android:text="Buy a cheap preheating systerm for your car" />
+                    android:text="Buy a cheap preheating system for your car" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -145,6 +180,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingBottom="50dp"
+                    android:paddingLeft="8dp"
                     android:paddingTop="6dp"
                     android:text="Eat leftovers from yesterdays dinner" />
 
@@ -172,6 +208,7 @@
                     android:layout_weight="1"
                     android:background="#F5F5F5"
                     android:paddingBottom="50dp"
+                    android:paddingLeft="8dp"
                     android:paddingTop="6dp"
                     android:text="Brush your teeth in the shower" />
 
@@ -201,6 +238,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingBottom="50dp"
+                    android:paddingLeft="8dp"
                     android:paddingTop="6dp"
                     android:text="make phonecalls in your car"
 
@@ -231,6 +269,7 @@
                     android:layout_weight="1"
                     android:background="#F5F5F5"
                     android:paddingBottom="50dp"
+                    android:paddingLeft="8dp"
                     android:paddingTop="6dp"
                     android:text="Buy a robot vacuum cleaner" />
 
@@ -260,6 +299,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingBottom="50dp"
+                    android:paddingLeft="8dp"
                     android:paddingTop="6dp"
                     android:text="Buy a robot lawn mower"
 
