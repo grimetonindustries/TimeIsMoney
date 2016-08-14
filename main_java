@@ -10,12 +10,85 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    int antal = 0;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+
+
+
+
+
+
+
+
+    /**
+     * Displays  minutes from checkboxes.
+     */
+    public void displayForCoffee(int antal) {
+        TextView scoreView = (TextView) findViewById(R.id.total_minutes);
+        scoreView.setText(String.valueOf(antal));
+    }
+
+
+
+
+
+
+    public void coffeecheckbox(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch (view.getId()) {
+            case R.id.coffe_checkbox_id:
+                if (checked) displayForCoffee (antal + 2);
+                    
+                else displayForCoffee(antal);
+                
+                break;
+        }
+    }
+
+
+
+    public void trainingcheckbox(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch (view.getId()) {
+        case R.id.training_checkbox_id:
+        if (checked) displayForCoffee(antal + 8);
+           
+        else displayForCoffee(antal);
+        
+        break;}
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     public void openbrowser(View view) {
