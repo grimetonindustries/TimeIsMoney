@@ -86,7 +86,7 @@
                     android:paddingBottom="50dp"
                     android:paddingLeft="8dp"
                     android:paddingTop="6dp"
-                    android:text="Get a coffee machine with timer."
+                    android:text="Get a coffee machine with timer"
 
 
                     />
@@ -97,8 +97,8 @@
                     android:background="#F5F5F5"
                     android:paddingRight="15dp"
                     android:text="2 min"
-
-                    android:id="@+id/coffeecheckbox"
+                    android:onClick="coffeecheckbox"
+                    android:id="@+id/coffe_checkbox_id"
 
                     />
 
@@ -108,7 +108,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
 
                 <TextView
@@ -120,15 +121,19 @@
                     android:paddingBottom="50dp"
                     android:paddingLeft="8dp"
                     android:paddingTop="6dp"
-                    android:text="Do your training at home."
+                    android:text="Do your training at home"
+
 
                     />
+
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:paddingRight="15dp"
                     android:text="8 min"
+                    android:onClick="trainingcheckbox"
+                    android:id="@+id/training_checkbox_id"
 
 
                     />
